@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css"
+    integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/dangnhap.css">
+  <title>Đăng Nhập</title>
+</head>
+
+<body>
+  <header>
+    <img class="header_img header_img_1" src="./images/header-img1.png" alt="header-img1">
+    <img class="header_img header_img_2" src="./images/header-img2.png" alt="header-img2">
+    <img class="header_img header_img_3" src="./images/header-img3.png" alt="header-img3">
+
+    <div>
+      <a href="./trangchu.html">
+        <img src="./images/logo.png" alt="Freeeze" id="logo" />
+      </a>
+    </div>
+
+    <nav>
+      <a href="./trangchu.html">Trang chủ</a>
+      <a href="./gioithieu.html">Giới thiệu</a>
+      <a href="./sanpham.html">Sản phẩm</a>
+      <a href="./tintuc.html">Tin tức</a>
+      <a href="./dangnhap.html">Đăng nhập</a>
+      <a href="./dangky.html">Đăng ký</a>
+      <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+
+    <div class="header_search">
+      <input type="text" name="q" id="search" placeholder="Nhập nội dung cần tìm...">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-cart-shopping cart"></i>
+    </div>
+  </header>
+
+  <main>
+    <form method="post" action="/dangnhap.php" enctype="application/x-www-form-urlencoded">
+      <h1><b>ĐĂNG NHẬP</b></h1>
+
+      <div>
+        <img src="./images/dangnhap/userlogin.png" alt="Avatar" width="400px">
+      </div>
+
+      <label for="email">
+        <i class="fa-solid fa-envelope"></i>
+        <input name="email" id="email" type="text" placeholder="Nhập email">
+      </label>
+
+      <label for="pass">
+        <i class="fa-solid fa-key"></i>
+        <input name="pass" id="pass" type="password" placeholder="Nhập mật khẩu">
+      </label>
+
+      <p>
+        Bạn quên <a href="#">Mật Khẩu?</a>
+        <input type="checkbox" name="ghinho" checked>
+        Ghi nhớ cho lần đăng nhập sau
+      </p>
+
+      <p>
+        <input type="submit" value="Đăng nhập">
+        <input type="reset" value="Hủy">
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      2021 Bản quyền thuộc về FreeezeVN.
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://wwư.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#logo" class="go_top">
+        <img src="./images/top.png" alt="Về đầu trang" height="100px">
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>

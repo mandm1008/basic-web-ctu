@@ -1,0 +1,13 @@
+form i {
+  margin-right: 4px;
+  padding: 4px 8px;
+  width: 34px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #cddc39;
+}
+
+form label {
+  display: block;
+  margin: 2px 0;
+}

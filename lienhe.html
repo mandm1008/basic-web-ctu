@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css"
+    integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/lienhe.css">
+  <title>Liên hệ</title>
+</head>
+
+<body>
+  <header>
+    <img class="header_img header_img_1" src="./images/header-img1.png" alt="header-img1">
+    <img class="header_img header_img_2" src="./images/header-img2.png" alt="header-img2">
+    <img class="header_img header_img_3" src="./images/header-img3.png" alt="header-img3">
+
+    <div>
+      <a href="./trangchu.html">
+        <img src="./images/logo.png" alt="Freeeze" id="logo" />
+      </a>
+    </div>
+
+    <nav>
+      <a href="./trangchu.html">Trang chủ</a>
+      <a href="./gioithieu.html">Giới thiệu</a>
+      <a href="./sanpham.html">Sản phẩm</a>
+      <a href="./tintuc.html">Tin tức</a>
+      <a href="./dangnhap.html">Đăng nhập</a>
+      <a href="./dangky.html">Đăng ký</a>
+      <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+
+    <div class="header_search">
+      <input type="text" name="q" id="search" placeholder="Nhập nội dung cần tìm...">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-cart-shopping cart"></i>
+    </div>
+  </header>
+
+  <main>
+    <h1>Liên hệ</h1>
+    <p class="local">
+      <img src="./images/lienhe/check-in.png" alt="check-in">
+      <b>Địa chỉ: 0123, Tòa Nhà ABC, TP. Cần Thơ.</b>
+      <span>
+        Nếu bạn có góp ý, vui lòng liên hệ bằng thư điẹn tử, hoặc sủ dụng biểu
+        mẫu bên dưới. Xin cảm ơn.
+      </span>
+    </p>
+    <h1>Góp ý</h1>
+
+    <form action="/lienhe.php" method="post">
+      <label for="name">
+        <i class="fa-solid fa-user"></i>
+        <input name="name" id="name" type="text" placeholder="Vui lòng nhập tên">
+      </label>
+      <label for="email">
+        <i class="fa-solid fa-envelope"></i>
+        <input name="email" id="email" type="text" placeholder="Vui lòng nhập email">
+      </label>
+      <label for="about">
+        <i class="fa-solid fa-rectangle-list"></i>
+        <select name="about" id="about">
+          <option value="0">Về sản phẩm/dịch vụ</option>
+          <option value="1">Về ưu đãi thành viên</option>
+          <option value="2">Về tin tuyển dụng</option>
+        </select>
+      </label>
+      <label for="content">
+        <i class="fa-solid fa-message"></i>
+        <textarea name="content" id="content" cols="30" rows="10" placeholder="Nội dung cần liên hệ..."></textarea>
+      </label>
+      <button>Gửi</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      2021 Bản quyền thuộc về FreeezeVN.
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://wwư.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#logo" class="go_top">
+        <img src="./images/top.png" alt="Về đầu trang" height="100px">
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>

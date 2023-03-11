@@ -1,0 +1,37 @@
+.local img {
+  display: inline-block;
+  width: 10px;
+  background-color: #cddc39;
+  padding: 4px 10px;
+  box-sizing: content-box;
+  vertical-align: middle;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+form label[for="content"] {
+  align-items: flex-start;
+}
+
+form button {
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+form label i {
+  margin-right: 4px;
+  padding: 4px 8px;
+  width: 34px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #cddc39;
+}
+
+textarea {
+  padding: 4px;
+  width: 500px;
+}

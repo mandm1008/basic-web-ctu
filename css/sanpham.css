@@ -1,0 +1,46 @@
+h1 {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+}
+
+section img {
+    width: 220px;
+}
+
+.item {
+    flex: 1;
+    position: relative;
+    text-align: justify;
+    padding-bottom: 36px;
+}
+
+.buy {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #ed4190;
+    background: linear-gradient(to top, rgb(205, 220, 57), rgba(205, 220, 57, 0));
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.buy input {
+    margin: 0 4px;
+}

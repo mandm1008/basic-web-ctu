@@ -1,0 +1,58 @@
+
+.content_loai_1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content_loai_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.content_loai_1 img,
+.content_loai_1 video,
+.content_loai_2 img,
+.content_loai_2 video {
+    width: 30%;
+}
+
+.content_loai_1 p,
+.content_loai_2 p {
+    width: 69%;
+    padding: 0 5px;
+}
+
+.huong_dan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.huong_dan div {
+    width: 48%;
+}
+
+.huong_dan div ul,
+.huong_dan div ol {
+    margin-left: 40px;
+}
+
+.dat_hang {
+    width: 100%;
+}
+
+.dat_hang .pt_dt {
+    display: inline-block;
+    width: 24%;
+    border: 1px solid #ed4190;
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.dat_hang .pt_dt img {
+    width: 100px;
+}

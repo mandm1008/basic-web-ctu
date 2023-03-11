@@ -1,0 +1,8 @@
+main {
+  display: grid;
+  grid-template-areas: "left_content main_content main_content main_content";
+}
+
+h2 {
+  text-align: justify;
+}

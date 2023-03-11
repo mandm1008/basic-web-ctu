@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css"
+    integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/dangnhap.css">
+  <title>Đăng Ký Thành Viên</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="./trangchu.html">
+        <img src="./images/logo.png" alt="Freeeze" id="logo" />
+      </a>
+    </div>
+
+    <nav>
+      <a href="./trangchu.html">Trang chủ</a>
+      <a href="./gioithieu.html">Giới thiệu</a>
+      <a href="./sanpham.html">Sản phẩm</a>
+      <a href="./tintuc.html">Tin tức</a>
+      <a href="./dangnhap.html">Đăng nhập</a>
+      <a href="./dangky.html">Đăng ký</a>
+      <a href="./lienhe.html">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="post" action="/dangky.php" enctype="multipart/form-data">
+      <h1><b>ĐĂNG KÝ</b></h1>
+
+      <label for="email">
+        <i class="fa-solid fa-envelope"></i>
+        <input name="email" id="email" type="text" placeholder="Vui lòng nhập email">
+      </label>
+
+      <label for="pass">
+        <i class="fa-solid fa-key"></i>
+        <input name="pass" id="pass" type="password" placeholder="Vui lòng nhập mật khẩu">
+      </label>
+
+      <label for="re_pass">
+        <i class="fa-solid fa-key"></i>
+        <input name="re_pass" id="re_pass" type="password" placeholder="Vui lòng nhập mật khẩu">
+      </label>
+
+      <div>
+        <i class="fa-solid fa-users"></i>
+        <input name="level" type="radio" value="Bạc"> Bạc
+        <input name="level" type="radio" value="Vàng"> Vàng
+        <input name="level" type="radio" value="Bạch Kim"> Bạch Kim
+      </div>
+
+      <label for="avatar">
+        <i class="fa-solid fa-image-portrait"></i>
+        <input name="avatar" id="avatar" type="file">
+      </label>
+
+      <p>
+        Thông qua việc tạo tài khoản, bạn đồng ý với <a href="#">Điều khoản & Quyền riêng tư của chúng tôi.</a>
+      </p>
+
+      <div>
+        <input type="submit" value="Đăng ký">
+        <input type="reset" value="Hủy">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      2021 Bản quyền thuộc về FreeezeVN.
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://wwư.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#logo" class="go_top">
+        <img src="./images/top.png" alt="Về đầu trang" height="100px">
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>
