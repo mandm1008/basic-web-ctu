@@ -6,3 +6,11 @@ main {
 h2 {
   text-align: justify;
 }
+
+.item div {
+  display: flex;
+}
+
+.item div p {
+  flex: 1;
+}
