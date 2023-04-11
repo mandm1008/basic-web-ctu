@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8">
@@ -13,12 +13,16 @@
     integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/dangnhap.css">
-  <title>Đăng Ký Thành Viên</title>
+  <link rel="stylesheet" href="./css/donhang.css">
+  <title>Trang chủ</title>
 </head>
 
 <body>
   <header>
+    <img class="header_img header_img_1" src="./images/header-img1.png" alt="header-img1">
+    <img class="header_img header_img_2" src="./images/header-img2.png" alt="header-img2">
+    <img class="header_img header_img_3" src="./images/header-img3.png" alt="header-img3">
+
     <div>
       <a href="./trangchu.html">
         <img src="./images/logo.png" alt="Freeeze" id="logo" />
@@ -34,49 +38,33 @@
       <a href="./dangky.html">Đăng ký</a>
       <a href="./lienhe.html">Liên hệ</a>
     </nav>
+
+    <div class="header_search">
+      <form id="search-form" action="./timkiem.html" method="get" onsubmit="return false;">
+        <input type="text" name="q" id="search" placeholder="Nhập nội dung cần tìm...">
+      </form>
+      <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+      <i class="fa-solid fa-cart-shopping cart"></i>
+    </div>
   </header>
 
   <main>
-    <form method="post" action="/dangky.php" enctype="multipart/form-data">
-      <h1><b>ĐĂNG KÝ</b></h1>
+    <h1>CHI TIẾT ĐƠN HÀNG</h1>
 
-      <label for="email">
-        <i class="fa-solid fa-envelope"></i>
-        <input name="email" id="email" type="text" placeholder="Vui lòng nhập email" required
-          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
-      </label>
+    <table>
+      <thead>
+        <tr>
+          <td>Hình SP</td>
+          <td>Tên SP</td>
+          <td>Số lượng</td>
+          <td>Giá</td>
+          <td>Thành tiền</td>
+          <td></td>
+        </tr>
+      </thead>
 
-      <label for="pass">
-        <i class="fa-solid fa-key"></i>
-        <input name="pass" id="pass" type="password" placeholder="Vui lòng nhập mật khẩu" required minlength="8">
-      </label>
-
-      <label for="re_pass">
-        <i class="fa-solid fa-key"></i>
-        <input name="re_pass" id="re_pass" type="password" placeholder="Vui lòng nhập mật khẩu" required minlength="8">
-      </label>
-
-      <div>
-        <i class="fa-solid fa-users"></i>
-        <input name="level" type="radio" value="Bạc"> Bạc
-        <input name="level" type="radio" value="Vàng"> Vàng
-        <input name="level" type="radio" value="Bạch Kim"> Bạch Kim
-      </div>
-
-      <label for="avatar">
-        <i class="fa-solid fa-image-portrait"></i>
-        <input name="avatar" id="avatar" type="file">
-      </label>
-
-      <p>
-        Thông qua việc tạo tài khoản, bạn đồng ý với <a href="#">Điều khoản & Quyền riêng tư của chúng tôi.</a>
-      </p>
-
-      <div>
-        <input type="submit" value="Đăng ký">
-        <input type="reset" value="Hủy">
-      </div>
-    </form>
+      <tbody></tbody>
+    </table>
   </main>
 
   <footer>
@@ -91,7 +79,7 @@
     </p>
   </footer>
 
-  <script src="./js/form.js"></script>
+  <script src="./js/donhang.js"></script>
 </body>
 
 </html>

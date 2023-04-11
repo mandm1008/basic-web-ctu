@@ -40,9 +40,11 @@
         </nav>
 
         <div class="header_search">
-            <input type="text" name="q" id="search" placeholder="Nhập nội dung cần tìm...">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping cart"></i>
+            <form id="search-form" action="./timkiem.html" method="get" onsubmit="return false;">
+                <input type="text" name="q" id="search" placeholder="Nhập nội dung cần tìm...">
+            </form>
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <a href="./donhang.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
         </div>
     </header>
 
@@ -145,6 +147,8 @@
             </a>
         </p>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

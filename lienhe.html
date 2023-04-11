@@ -61,11 +61,12 @@
     <form action="/lienhe.php" method="post">
       <label for="name">
         <i class="fa-solid fa-user"></i>
-        <input name="name" id="name" type="text" placeholder="Vui lòng nhập tên">
+        <input name="name" id="name" type="text" placeholder="Vui lòng nhập tên" minlength="4">
       </label>
       <label for="email">
         <i class="fa-solid fa-envelope"></i>
-        <input name="email" id="email" type="text" placeholder="Vui lòng nhập email">
+        <input name="email" id="email" type="text" placeholder="Vui lòng nhập email"
+          pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
       </label>
       <label for="about">
         <i class="fa-solid fa-rectangle-list"></i>
@@ -77,7 +78,8 @@
       </label>
       <label for="content">
         <i class="fa-solid fa-message"></i>
-        <textarea name="content" id="content" cols="30" rows="10" placeholder="Nội dung cần liên hệ..."></textarea>
+        <textarea name="content" id="content" cols="30" rows="10" placeholder="Nội dung cần liên hệ..."
+          minlength="10"></textarea>
       </label>
       <button>Gửi</button>
     </form>
@@ -94,6 +96,8 @@
       </a>
     </p>
   </footer>
+
+  <script src="./js/form.js"></script>
 </body>
 
 </html>

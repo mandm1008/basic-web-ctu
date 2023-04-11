@@ -1,0 +1,13 @@
+table {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+table td {
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.full-width {
+  text-align: right;
+}
