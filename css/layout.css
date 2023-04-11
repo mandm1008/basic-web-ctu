@@ -226,3 +226,37 @@ footer .go_top {
     padding: 10px;
     z-index: 100;
 }
+
+.container {
+    position: fixed;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 #000066, 0 0 5px 0 #00004d;
+}
+
+.adsvercontainer {
+    left: 0;
+    top: 10px;
+    height: 30px;
+}
+
+.adsvertext {
+    white-space: wrap;
+}
+
+.adstext {
+    position: absolute;
+    left: 5px;
+}
+
+.adshorcontainer {
+    bottom: 50px;
+    height: 50px;
+}
+
+.adshortext {
+    white-space: nowrap;
+}
